@@ -1,0 +1,26 @@
+    #IAmMatt
+
+    # Change to home directory cd ~
+
+    # Pipe output of history to the pager less
+    history | less
+
+    1  history
+    2  history | tail -r
+    3  history | tail --r
+    # number 3 was incorrect.  did not need --
+    4  history | tail -r
+    5  pwd
+    # above lets you see where you're at.
+    6  history
+    7  history | tail
+    8  history | less
+    9  pwd
+   10  history > moving_around.txt
+   # this created a document called moving.. and put the console history in it.
+    1  history'
+history'
+    2  history
+    3  pwd
+    4  ls
+    5  history >> moving_around.txt

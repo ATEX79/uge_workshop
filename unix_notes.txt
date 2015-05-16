@@ -1,3 +1,5 @@
+    #List hidden directories.
+
     #IAmMatt
 
     # Change to home directory cd ~

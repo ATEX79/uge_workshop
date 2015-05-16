@@ -1,0 +1,94 @@
+Commands:
+
+file paths
+  absolute paths begin with / --> /c/users/mpbiggers
+  relative isn't as specific -->
+
+command moving from one path to another is cd.
+  cd allows you to change directories.
+  if you don't supply a path, it takes you home.
+
+pwd is important command; shows you where you are, usually home.
+
+/ is the topmost directory.  everything comes from this "root"
+
+ls - command that shows the names of the items in your present working directory in alpabetical order.
+  change it slightly to "ls -t" --> shows the most recently modified file first.
+  ls -l --> shows long form file names.
+  ls -lt --> combines both.
+  to reverse this ordering --> ls -r --> lists items in reverse alphabetical order.
+      note - computer treats upper case letters as first before lower case.
+  ls -rt --> oldest file not modified recently shown first.
+all flags are noted with the - and the space. ls space then -. ls -rt.
+
+man - command and it's short for manual.
+
+Unix naming conventions
+  use dashes or underscores instead of spaces in names.
+  some software doesn't deal well with spaces, so that's an important practice when naming files.
+
+Unix/Linux is a CASE SENSITIVE operating system.
+  A and a are recognized differently.
+
+Mac OSX and Windows are CASE INSENSITIVE.
+
+To be safe, always user lower cases and no spaces using _ or -
+
+Relative Paths
+  they are always construed to begin with current directory.
+
+Shortcuts - ways to provide long form information by using a much shorter symbolic representation.
+
+history - shows your history.
+
+tail - what does tail do?  check slides.
+
+history | less - only shows you one page of history versus all of it.
+
+"pipe" character is |
+
+Version Control is important because:
+  1.  backup
+  2.  sharing code with others; share the source with team members.
+  3.  collaborate - tracking changes.  if someone breaks the code, you first know who broke it with their changes and you can go back to a previous version.
+
+repository - system of storing your code.
+
+when the console refers to "insertions", it is referring to lines of text.
+
+commits and snapshots are the same thing.  they are moments in time of the code.
+
+where are the commits locted?  they are stored in a hidden directory --> ls .git
+
+948 insertions (+) is adding 948 lines of code and (-) is removing those lines of code.
+
+what goes in each of the commits (aka snapshots)?
+  1.  author/person who made the changes to the commit.
+  2.  time stamp
+  3.  message or commment
+  4.  unique ID for that particular commmit which is a string of random characters.  lthis unique ID is called the hash.
+  5.  the actual changes made to the code.
+
+BASIC git workflow (local):
+  modify --> these changes are untracked/unstaged --> add them to the stage --> staged/tracked --> commit
+      and then commit goes back to modify and it's the circle of life.
+      after the commit and before the changes, it's considered "clean".  all other times, it's "dirty".
+
+And add GitHub into this and it's an Advanced Git Workflow.
+
+"touch" is an easy command to create files.
+  "touch funny_notes.txt" will create a text file named funny_notes.
+
+the commit you're looking at is called the head.
+
+the path from one hash to another is called the difference.
+
+MASTER - this is the name that Git gives to the first branch.
+
+
+
+the commit you're looking at is called the head.
+
+the path from one hash to another is called the difference.
+
+MASTER - this is the name that Git gives to the first branch.
